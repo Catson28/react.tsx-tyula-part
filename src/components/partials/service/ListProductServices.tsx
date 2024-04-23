@@ -133,12 +133,12 @@ const ListProductServices: React.FC<Props> = ({ id, onAddProductService }) => {
             <ServiceCard selected={selectedCard === 0} onClick={() => handleCardClick(0)}>
               <Title selected={selectedCard === 0}>Atom</Title>
               <Subtitle>11.99</Subtitle>
-              <ServiceImage src="http://localhost:8000/media/images/35652246.jpg" alt="Service Image" />
+              <ServiceImage src="https://zezao.pythonanywhere.com/media/images/35652246.jpg" alt="Service Image" />
             </ServiceCard>
             <ServiceCard selected={selectedCard === 1} onClick={() => handleCardClick(1)}>
               <Title selected={selectedCard === 1}>Limon</Title>
               <Subtitle>110.99</Subtitle>
-              <ServiceImage src="http://localhost:8000/media/images/D_NQ_NP_773592-MLB71333730379_082023-O.webp" alt="Service Image" />
+              <ServiceImage src="https://zezao.pythonanywhere.com/media/images/D_NQ_NP_773592-MLB71333730379_082023-O.webp" alt="Service Image" />
             </ServiceCard>
           </GalleryContainer>
 

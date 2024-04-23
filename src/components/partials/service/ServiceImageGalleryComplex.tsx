@@ -99,7 +99,7 @@ const ServiceImageGalleryComplex: React.FC<Props> = ({ images }) => {
         <>
           {images.map((serviceData, index) => (
             <ServiceCard key={index} onClick={toggleSlider}>
-              <ServiceImage src={`http://localhost:8000${serviceData.image.Path}`} alt={`Service Image ${index + 1}`} showSlider={showSlider} />
+              <ServiceImage src={`https://zezao.pythonanywhere.com${serviceData.image.Path}`} alt={`Service Image ${index + 1}`} showSlider={showSlider} />
             </ServiceCard>
           ))}
         </>
@@ -109,7 +109,7 @@ const ServiceImageGalleryComplex: React.FC<Props> = ({ images }) => {
             <div key={index}>
               <CustomGrid >
                 <ToggleButton onClick={toggleCloseSlider}>X</ToggleButton> {/* Botão para fechar o slider */}
-                <ServiceImage  comprimento={80} altura={80} src={`http://localhost:8000${serviceData.image.Path}`} alt={`Service Image ${index + 1}`} showSlider={showSlider} />
+                <ServiceImage  comprimento={80} altura={80} src={`https://zezao.pythonanywhere.com${serviceData.image.Path}`} alt={`Service Image ${index + 1}`} showSlider={showSlider} />
 
                 <Overlay onClick={toggleCloseSlider} />
               </CustomGrid>

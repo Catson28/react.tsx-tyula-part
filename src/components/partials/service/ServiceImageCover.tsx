@@ -77,7 +77,7 @@ const ServiceImageCover: React.FC<Props> = ({ cover,title, price }) => {
             <Title style={{ fontSize: isHovered ? "2em" : "1.5em" }}>{title}</Title>
             <Subtitle>{price}</Subtitle>
           </CardOverlay>
-          <ServiceImage src={`http://localhost:8000${cover.Path}`} alt={`cover Image`} />
+          <ServiceImage src={`https://zezao.pythonanywhere.com${cover.Path}`} alt={`cover Image`} />
         </ServiceCard>
       )}
     </GalleryContainer>
